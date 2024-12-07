@@ -1,0 +1,142 @@
+:root{
+    --preto: #202020;
+    --preto-claro: #404040;
+    --cinza: #404040;
+    --branco: white;
+}
+
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: var(--preto);
+  color: var(--branco);
+}
+
+header{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--branco);
+    background-image: url('Capturar.PNG');
+    height: 330px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-color: #252326;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 31px;
+}
+
+header h1{
+    align-items: center;
+}
+
+#navegacao {
+    display: flex;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        flex-grow: 1;
+        padding-left: 0;
+    }
+}
+
+
+ul > li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    text-decoration-color: none;
+    color: var(--branco);
+}
+
+footer{
+    border-top: 1px solid var(--branco);
+}
+
+.contato {
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contato_mapa{
+    max-width: 350px;
+    max-height: 400px;
+
+    width: auto;
+    height: auto;
+}
+
+.contato form {
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+
+.contato form label, .contato form input, .contato form textarea {
+    margin-bottom: 10px;
+}
+
+.contato form .botao {
+    grid-column: 1 / 3;
+}
+
+section{
+    background-color: var(--preto-claro);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+section h1 {
+    text-align: center;
+}
+
+.border_left{
+    border-top-left-radius: 50px;
+}
+
+.border_right{
+    border-top-right-radius: 50px;
+}
+
+input, textarea{
+    border-radius: 4px;
+}
+
+.first-section {
+    border-radius: 50px 50px 0px 0px;
+}
+
+.last-section {
+    border-radius: 0px 0px  50px 50px;    
+}
+
+#servicos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+     header h1 {
+        display: none;
+    }
+    
+    header {
+        background-position: center;
+    }
+
+    .contato {
+        flex-direction: column;
+    }
+
+    #servicos{
+        flex-direction: column;
+    }
+}

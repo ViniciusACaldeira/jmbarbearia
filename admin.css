@@ -1,0 +1,24 @@
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: var(--cinza);
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul > li{
+    cursor: pointer;
+}
